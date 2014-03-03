@@ -1,17 +1,23 @@
-##TDOP, Top Down Operator Precedence Mini JavaScript Parser
+##ETSII ULL Grado de Informatica 
+##Asignatura: Procesadores de Lenguajes
+#Práctica 4: Analizador léxico de un subconjunto de Javascript
 
-## Author
+## Descripción
 
-Forked from Douglas Crockford TDOP project.
-douglas@crockford.com
+El objetivo de esta práctica es reescribir el analizador léxico de Javascript
+escrito por Douglas Crockford en [https://github.com/douglascrockford/TDOP/blob/master/tokens.js]() utilizando para ello expresiones regulares.
 
-## Introduction
+## Enlaces 
 
-* A full introduction is in the file [tdop.html](http://crguezl.github.io/ull-etsii-grado-pl-minijavascript/tdop.html) by Douglas Crockford.
-It contains a description of Vaughn Pratt's Top Down Operator Precedence,
-and describes a parser for Simplified JavaScript in Simplified JavaScript.
+[Despliegue en Heroku](http://p4analisislexico.herokuapp.com)
 
-* [Deployment at GitHub pages](http://crguezl.github.io/ull-etsii-grado-pl-minijavascript/). 
-  The app parses the input file  and displays its AST. 
+[Test](http://p4analisislexico.herokuapp.com/tests/)
 
-* The exercise is to understand and improve [tokens.js](https://github.com/crguezl/ull-etsii-grado-pl-minijavascript/blob/master/tokens.js). The `tokens` function  produces an array with the tokens for a given input string.
+## Autores
+
+  - Adrián González Martín [Ir a perfil](https://github.com/alu4073)
+  - Sara Martín Molina [Ir a perfil](https://github.com/alu4102)
+
+## Licencia
+
+MIT
