@@ -15,6 +15,7 @@
     throw t;
 };*/
 
+
 function main() {
     var parse = make_parse();
 
@@ -29,9 +30,19 @@ function main() {
         string = JSON.stringify(e, ['name', 'message', 'from', 'to', 'key',
                 'value', 'arity', 'first', 'second', 'third', 'fourth'], 4);
     }
+    
     OUTPUT.innerHTML = string.replace(/&/g, '&amp;').replace(/[<]/g, '&lt;');
+	if (window.localStorage) {
+	  localStorage.INPUT = source;
+	  localStorage.OUTPUT = OUTPUT.innerHTML;
+	}
+	//localStorage.clear();
 };
 
 window.onload = function() {
   PARSE.onclick = main;
+    if (window.localStorage && localStorage.INPUT && localStorage.OUTPUT) {
+    document.getElementById("INPUT").innerHTML = localStorage.INPUT;
+    document.getElementById("OUTPUT").innerHTML = localStorage.OUTPUT;
+  }
 }
