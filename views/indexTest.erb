@@ -1,0 +1,19 @@
+  
+  <textarea autofocus id="INPUT" class="hidden">
+  </textarea>
+  <pre id=OUTPUT class="hidden"></pre>
+
+  <link rel="stylesheet" href="/tests/mocha.css" />
+  <div id="mocha"></div>
+
+  <script src="tests/chai.js"></script>
+  <script src="/tests/mocha.js"></script>
+  <script src="main.js"></script>
+  <script src="parse.js"></script>
+  <script src="tokens.js"></script>
+  <script>mocha.setup('tdd')</script>
+  <script src="/tests/tests.js"></script>
+  <script>
+    mocha.run();
+  </script>
+
