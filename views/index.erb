@@ -5,25 +5,31 @@
       <a href="https://github.com/crguezl/ull-etsii-grado-pl-minijavascript" class="mylink">Repo at GitHub</a>
     </nav>
   </p>
-  <h2>Input</h2>
-  <p>
-  Fill the input box with javascript code:
-  </p>
-  <textarea id="INPUT">
-     var a = "hello"; // initialize a
-     var b = function(x) {
-             var c = 3;
-               return x+c;
-             };
-  </textarea>
-  <br>
-  <input id="PARSE" value=parse type=button class="mylink">
-  <pre id=OUTPUT></pre>
-
-  <script>
+ <script>
     function dump(fileName) {
        $.get(fileName, function (data) {
           $("#INPUT").val(data);
        });
     };
   </script> 
+  <h2>Input</h2>
+  <p>
+  Fill the input box with javascript code:
+  </p>
+  <textarea autofocus id="INPUT">
+     var a = "hello"; // initialize a
+     var b = function(x) {
+             var c = 3;
+               return x+c;
+     };
+  </textarea>
+  <br>
+  <div style="display:inline">
+        <input id="PARSE" value=parse type=button class="mylink"> 
+        <button id ="input1" type="button" onclick="dump('input1.txt');" class="mylink">input1</button>
+        <button id ="input2"  type="button" onclick="dump('input2.txt');" class="mylink">input2</button>
+        <button id ="inputError"  type="button" onclick="dump('inputError.txt');" class="mylink">inputError</button>
+  </div>
+  <pre id=OUTPUT></pre>
+
+ 
