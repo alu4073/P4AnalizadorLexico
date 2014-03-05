@@ -1,6 +1,5 @@
-###ETSII ULL Grado de Informatica 
-###Asignatura: Procesadores de Lenguajes
-##Práctica 4: Analizador léxico de un subconjunto de Javascript
+###ETSII ULL Grado de Informática-Asignatura: Procesadores de Lenguajes
+###Práctica 4: Analizador léxico de un subconjunto de Javascript
 
 ## Descripción
 
