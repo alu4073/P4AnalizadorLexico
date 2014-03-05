@@ -1,6 +1,6 @@
-##ETSII ULL Grado de Informatica 
-##Asignatura: Procesadores de Lenguajes
-#Práctica 4: Analizador léxico de un subconjunto de Javascript
+###ETSII ULL Grado de Informatica 
+###Asignatura: Procesadores de Lenguajes
+##Práctica 4: Analizador léxico de un subconjunto de Javascript
 
 ## Descripción
 
@@ -11,7 +11,7 @@ escrito por Douglas Crockford en [https://github.com/douglascrockford/TDOP/blob/
 
 [Despliegue en Heroku](http://p4analisislexico.herokuapp.com)
 
-[Test](http://p4analisislexico.herokuapp.com/tests/)
+[Test](http://p4analisislexico.herokuapp.com/tests)
 
 ## Autores
 
