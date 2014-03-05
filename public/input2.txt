@@ -1,10 +1,10 @@
-     var a = "hello"; // initialize a
-     var b = "GoodBye";
-     var c = function(x) {
-             var d = 3;
-               return x+d;
-             };
-     var e = function(x) {
-             var f = 5;
-               return x-f;
-             };
+var a = "hello"; // initialize a
+var b = "GoodBye";
+var c = function(x) {
+	var d = 3;
+	return x+d;
+};
+var e = function(x) {
+	var f = 5;
+	return x-f;
+};

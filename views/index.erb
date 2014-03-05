@@ -1,35 +1,35 @@
-  <h1>Top Down Operator Precedence. Lexical Analysis</h1>
+  <h1>Analizador léxico de código Javascript</h1>
   <p>
     <nav>
-      <a href="http://javascript.crockford.com/tdop/tdop.html" class="mylink">Top Down Operator Precedence tutorial</a>
-      <a href="https://github.com/crguezl/ull-etsii-grado-pl-minijavascript" class="mylink">Repo at GitHub</a>
+      <a href="http://p4analisislexico.herokuapp.com/tests" class="mylink">Pruebas</a>
+      <a href="https://github.com/alu4073/P4AnalizadorLexico" class="mylink">Repositorio en GitHub</a>
     </nav>
   </p>
- <script>
+  <link rel="shortcut icon" href="faviconStatic.ico" type="image/x-icon">
+  <link rel="icon" href="faviconAnim.ico" type="image/x-icon">
+  <script>
     function dump(fileName) {
        $.get(fileName, function (data) {
           $("#INPUT").val(data);
        });
     };
   </script> 
-  <h2>Input</h2>
-  <p>
-  Fill the input box with javascript code:
+  <p><br>
+  <h2>·Elija un fichero de prueba o introduzca el código que desea analizar:</h2>
   </p>
-  <textarea autofocus id="INPUT">
-     var a = "hello"; // initialize a
-     var b = function(x) {
-             var c = 3;
-               return x+c;
-     };
-  </textarea>
-  <br>
-  <div style="display:inline">
-        <input id="PARSE" value=parse type=button class="mylink"> 
-        <button id ="input1" type="button" onclick="dump('input1.txt');" class="mylink">input1</button>
-        <button id ="input2"  type="button" onclick="dump('input2.txt');" class="mylink">input2</button>
-        <button id ="inputError"  type="button" onclick="dump('inputError.txt');" class="mylink">inputError</button>
-  </div>
-  <pre id=OUTPUT></pre>
+	<nav><div id = "ficheros" style="display:inline">
+        <button id ="input1" type="button" onclick="dump('input1.txt');" class="mylink">Fichero de prueba 1</button>
+        <button id ="input2"  type="button" onclick="dump('input2.txt');" class="mylink">Fichero de prueba 2</button>
+        <button id ="inputError"  type="button" onclick="dump('inputError.txt');" class="mylink">Fichero con error</button>
+</div>
+		<input id="PARSE" value=Analizar type=button class="mylink">
+	</nav>
 
- 
+	<div id = "io">
+	   <textarea autofocus id="INPUT">
+     		var nombre = "Antonio"; // initialize a
+     		var saluda = function() {
+             	alert('Hola');
+     		};
+  	   </textarea>
+	   <pre id=OUTPUT></pre>

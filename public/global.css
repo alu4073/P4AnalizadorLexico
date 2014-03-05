@@ -1,40 +1,80 @@
 html *
 {
-    th {background-color: thistle; border: black solid 1px; text-align: left;
-        padding-left: 10px; padding-right: 10px; vertical-align: top;}
-    td {background-color: white; border: black solid 1pt; padding-left: 10px;
-        padding-right: 10px; vertical-align: top;}
     table {width: 90%; border: 0px; cellpadding: 0px;}
-}
-#INPUT 
-{
-    border: none; 
-    color: black;
-    font-family: monospace;
-    height: 1in;
-    overflow: auto;
-    /* padding: 0.5em; */
-    width: 80%;
-    background-color: #66FFCC; 
-}
-body { background-color: #99FFFF; }
-#OUTPUT 
-{
-    background-color: #66FFCC; 
-    width: 80%;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 }
 
+h1   { text-align: center; font-size: 45px; color:#F5F5FF; }
+h2   { text-align: left; font-size: 20; font-style:italic; color:#D6E3E3; margin-left: 50px;}
+td   { vertical-align: top; text-align: left; }   
+th   { vertical-align: top; text-align: center; } 
+
+#io
+{
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px 25px;
+  width: auto;
+  height: 1000px;
+}
+
+#INPUT 
+{
+    margin-top: 12px;
+	color: black;
+    font-family: monospace;
+    height: 2in;
+    overflow: auto;
+
+    align:center;
+    text-align: left;
+    background-color: #E8E8E8; 
+	width: 35%;
+	padding: 20px 30px;
+    border: solid #330099;
+	float: left;
+	border-radius: 25px; 
+}
+body { background: url(./azulC.jpg) no-repeat center center fixed; 
+       background-color: #003366; }
+
+#OUTPUT 
+{ 
+    align:center;
+    text-align: left;
+    background-color: #E8E8E8; 
+    width: 50%;
+    padding: 20px 30px;
+    border: solid #330099;  
+    float: right;
+    border-radius: 25px; 	/*Bordes redondeados*/
+}
+
+#ficheros
+{
+ 	align:center;
+    text-align: left;
+	float: left;
+	margin-left: 45px;
+}
+
+#PARSE
+{
+	border-radius: 25px; 	/*Bordes redondeados*/
+	padding: 5px 150px;
+}
 
 a {
   font-size: x-large;
   text-decoration:none;
 }
 
-a:link { color:#00FFFF; }
+a:link { color:#000000; }
 a:visited { color:black; }
 a:hover{ 
   background-color:black; 
   color: #FFF;
+  border: 5px solid #330099;
 }
 a:active {color:#0000FF;}  /* selected link */
 
@@ -51,12 +91,64 @@ nav li {
 }
 
 .mylink {
-  background-color: #66FFCC;
+  background-color: #3366FF;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
-  border: 5px solid #009900;
+  border: solid #330099;
   padding: 5px;
 }
 
 /* Supress borders after the button is pressed */
 #PARSE:focus {outline:0; }
+
+#PARSE:hover{ 
+  background-color:#003366; 
+  color: #FFF;
+  border: solid #330099;
+}
+#input1:hover{ 
+  background-color:#003366; 
+  color: #FFF;
+  border: solid #330099;
+}
+#input2:hover{ 
+  background-color:#003366; 
+  color: #FFF;
+  border: solid #330099;
+}
+#inputError:hover{ 
+  background-color:#003366; 
+  color: #FFF;
+  border: solid #330099;
+}
+
+#INPUT:hover{ 
+  background-color:#0066FF; 
+  color: #FFF;
+  border: solid #330099;
+}
+
+#OUTPUT:hover{ 
+  background-color:#3333FF; 
+  color: #FFF;
+  border: solid #330099;
+}
+
+#mocha { 
+  background-color:#006666; 
+  color: #FFF;
+  border: 5px solid #330099;
+  border-radius: 10px; 
+  padding: 5px 30px;
+}
+
+#mocha:hover{ 
+  background-color:#003300; 
+  color: #FFF;
+  border: solid #330099;
+  border-radius: 10px; 
+}
+
+
+.hidden      { display: none; }
+.unhidden    { display: block; }

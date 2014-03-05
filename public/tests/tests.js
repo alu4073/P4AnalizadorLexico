@@ -1,6 +1,6 @@
 var assert = chai.assert;
 
-suite('Resultados de los tests:', function() {
+suite('Resultados de los tests: ', function() {
    test('Generación de la salida correcta para una asignación de variable', function() {
         INPUT.value = ' var nombre = "Antonio";';
         main();

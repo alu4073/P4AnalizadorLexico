@@ -32,6 +32,7 @@ function main() {
     }
     
     OUTPUT.innerHTML = string.replace(/&/g, '&amp;').replace(/[<]/g, '&lt;');
+    OUTPUT.className = "unhidden";
 	if (window.localStorage) {
 	  localStorage.INPUT = source;
 	  localStorage.OUTPUT = OUTPUT.innerHTML;
@@ -44,5 +45,6 @@ window.onload = function() {
     if (window.localStorage && localStorage.INPUT && localStorage.OUTPUT) {
     document.getElementById("INPUT").innerHTML = localStorage.INPUT;
     document.getElementById("OUTPUT").innerHTML = localStorage.OUTPUT;
+    document.getElementById("OUTPUT").className = "unhidden";
   }
 }
