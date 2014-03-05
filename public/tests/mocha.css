@@ -36,7 +36,7 @@ body {
 }
 
 #mocha h1 a:hover {
-  text-decoration: underline;
+
 }
 
 #mocha .suite .suite h1 {
@@ -118,7 +118,7 @@ body {
 }
 
 #mocha .test.fail pre {
-  color: black;
+  color: white;
 }
 
 #mocha .test.fail::before {
@@ -217,19 +217,33 @@ body {
   position: fixed;
   top: 15px;
   right: 10px;
-  font-size: 12px;
+  font-size: 15px;
   margin: 0;
   color: #888;
   z-index: 1;
 }
 
+#mocha-stats:hover {
+  position: fixed;
+  top: 15px;
+  right: 10px;
+  font-size: 19px;
+  margin: 0;
+  color: #FFFFFF;
+  z-index: 1;
+  background-color: #787878; 
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+}
+
 #mocha-stats .progress {
   float: right;
   padding-top: 0;
+  color: white;
 }
 
 #mocha-stats em {
-  color: black;
+  color: white;
 }
 
 #mocha-stats a {

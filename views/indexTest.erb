@@ -1,12 +1,4 @@
-  
-  <textarea autofocus id="INPUT" class="hidden">
-  </textarea>
-  <pre id=OUTPUT class="hidden"></pre>
-
-  <link rel="stylesheet" href="/tests/mocha.css" />
-  <br>
-  <div id="mocha"></div>
-
+    <div id="mocha"></div>
   <script src="tests/chai.js"></script>
   <script src="/tests/mocha.js"></script>
   <script src="main.js"></script>
@@ -17,4 +9,31 @@
   <script>
     mocha.run();
   </script>
+
+  <div>
+  <p>
+    <nav>
+      <a href="http://p4analisislexico.herokuapp.com/" class="mylink">Volver</a>
+    </nav>
+  </p>
+  <link rel="shortcut icon" href="faviconStatic.ico" type="image/x-icon">
+  <link rel="icon" href="faviconAnim.ico" type="image/x-icon">
+  <input id="PARSE" value=Analizar type=button class="hidden">
+  <p><br>
+  <h2>Última prueba ejecutada en los tests: </h2>
+  </p>
+	<div id = "io">
+	   <textarea autofocus id="INPUT">
+     		var nombre = "Antonio"; // initialize a
+     		var saluda = function() {
+             	alert('Hola');
+     		};
+  	   </textarea>
+  <pre id=OUTPUT></pre>
+
+  <link rel="stylesheet" href="/tests/mocha.css" />
+  <br>
+  </div>
+
+
 

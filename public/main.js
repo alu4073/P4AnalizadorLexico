@@ -43,8 +43,9 @@ function main() {
 window.onload = function() {
   PARSE.onclick = main;
     if (window.localStorage && localStorage.INPUT && localStorage.OUTPUT) {
-    document.getElementById("INPUT").innerHTML = localStorage.INPUT;
-    document.getElementById("OUTPUT").innerHTML = localStorage.OUTPUT;
-    document.getElementById("OUTPUT").className = "unhidden";
-  }
+       document.getElementById("INPUT").innerHTML = localStorage.INPUT;
+       document.getElementById("OUTPUT").innerHTML = localStorage.OUTPUT;
+       document.getElementById("OUTPUT").className = "unhidden";
+    }
+
 }
